@@ -13,8 +13,10 @@
     <script>
         (function() {
             const navEntry = performance.getEntriesByType('navigation')[0];
-            if (navEntry && navEntry.type === 'reload') {
+            const hasStarted = sessionStorage.getItem('hasStarted');
+            if (!hasStarted || (navEntry && navEntry.type === 'reload')) {
                 document.documentElement.classList.add('is-reloading');
+                sessionStorage.setItem('hasStarted', 'true');
             }
         })();
     </script>
