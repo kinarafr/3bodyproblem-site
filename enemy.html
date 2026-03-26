@@ -9,6 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+    <script>
+        (function() {
+            const navEntry = performance.getEntriesByType('navigation')[0];
+            if (navEntry && navEntry.type === 'reload') {
+                document.documentElement.classList.add('is-reloading');
+            }
+        })();
+    </script>
 </head>
 <body class="enemy-page">
     <div id="loading-screen" class="loading-screen">

@@ -2,11 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Loading Screen Logic
     const loadingScreen = document.getElementById('loading-screen');
     if (loadingScreen) {
-        const navEntry = performance.getEntriesByType('navigation')[0];
-        const isReload = navEntry && navEntry.type === 'reload';
-        const isDirectNav = !document.referrer || !document.referrer.includes(window.location.hostname);
+        const isReloading = document.documentElement.classList.contains('is-reloading');
         
-        if (!isReload && !isDirectNav) {
+        if (!isReloading) {
             loadingScreen.style.display = 'none';
         } else {
             document.body.style.overflow = 'hidden'; // Prevent scrolling while loading
