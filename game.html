@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Game | 3 Body Problem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body class="game-page">
+    <div id="loading-screen" class="loading-screen">
+        <svg viewBox="0 0 200 200" class="three-suns-svg">
+            <circle cx="100" cy="100" r="80" />
+            <circle cx="60" cy="100" r="40" />
+            <circle cx="80" cy="100" r="20" />
+        </svg>
+        <div class="loading-content">
+            <div class="loading-countdown" id="loading-countdown">99:99:99</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scanlines"></div>
+
+    <a href="https://www.netflix.com/title/81024821" target="_blank" class="netflix-btn">
+        <span>Watch on</span>
+        <img src="assets/svg/Netflix_2015_logo.svg" alt="Netflix">
+    </a>
+    <div class="hero-bg" style="background-image: url('assets/images/Dark\ Bg.jpg'); z-index: -2;"></div>
+    <h1 class="bg-title">Enter the Three-Body World</h1>
+    <div id="three-canvas-container" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; pointer-events: auto;"></div>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="science.html">Science</a>
+            <a href="game.html">The Game</a>
+            <a href="enemy.html">The Enemy</a>
+            <a href="characters.html">Characters</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <div class="content-box">
+                <h3 style="color: var(--accent); font-family: var(--font-mono);">Are you worthy of the San-Ti?</h3>
+                <a href="enemy.html" class="btn">Meet The Enemy</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Three.js and plugins for 3D Game Object -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/STLLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="assets/script.js"></script>
+</body>
+</html>

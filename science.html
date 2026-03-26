@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Science | 3 Body Problem</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:wght@400;700;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+</head>
+<body class="science-page">
+    <div id="loading-screen" class="loading-screen">
+        <svg viewBox="0 0 200 200" class="three-suns-svg">
+            <circle cx="100" cy="100" r="80" />
+            <circle cx="60" cy="100" r="40" />
+            <circle cx="80" cy="100" r="20" />
+        </svg>
+        <div class="loading-content">
+            <div class="loading-countdown" id="loading-countdown">99:99:99</div>
+            <div class="loading-bar-container">
+                <div class="loading-bar" id="loading-bar"></div>
+            </div>
+        </div>
+    </div>
+    <div class="scanlines"></div>
+
+    <a href="https://www.netflix.com/title/81024821" target="_blank" class="netflix-btn">
+        <span>Watch on</span>
+        <img src="assets/svg/Netflix_2015_logo.svg" alt="Netflix">
+    </a>
+
+    <a href="game.html" class="vr-btn">
+        <span>Do you like VR Games?</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 15V8a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h4.5l1.5 2h4l1.5-2H20a2 2 0 0 0 2-2Z"/>
+            <path d="M8 12h.01"/>
+            <path d="M16 12h.01"/>
+        </svg>
+    </a>
+
+    <div class="hero-bg" style="background-image: url('assets/images/Group.jpg'); opacity: 1; filter: none;"></div>
+
+    <nav>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="science.html">Science</a>
+            <a href="game.html">The Game</a>
+            <a href="enemy.html">The Enemy</a>
+            <a href="characters.html">Characters</a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="container">
+            <h1>When Science Breaks</h1>
+            <div class="content-box">
+                <p>For centuries, we believed the universe followed a predictable set of rules. We were wrong. From the particle accelerators of Europe to the radar bases of China, the foundation of human knowledge is crumbling.</p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>The Oxford Five</h3>
+                            <p>Meet the elite group of physicists tasked with solving the impossible.</p>
+                        </div>
+                        <a href="https://three-body-problem.fandom.com/wiki/Oxford_Five" target="_blank" class="btn-sm">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>The Sophon Effect</h3>
+                            <p>If the "eyes" of the enemy are everywhere, is any secret truly safe?</p>
+                        </div>
+                        <a href="https://three-body-problem.fandom.com/wiki/Sophon" target="_blank" class="btn-sm">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                    <div class="feature-card">
+                        <div class="card-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20"/><path d="M12 2v20"/><path d="m4.93 4.93 14.14 14.14"/><path d="m4.93 19.07 14.14-14.14"/></svg>
+                        </div>
+                        <div class="card-content">
+                            <h3>Nanofiber Breakthrough</h3>
+                            <p>Exploring the technology that could either save us or slice through the very fabric of our civilization.</p>
+                        </div>
+                        <a href="https://three-body-problem.fandom.com/wiki/Nanofibre" target="_blank" class="btn-sm">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width: 20px; height: 20px;"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
